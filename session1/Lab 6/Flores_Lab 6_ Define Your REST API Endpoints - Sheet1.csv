@@ -1,0 +1,75 @@
+Resources,HTTP Verb,Resource URL,Use Case Representation
+Visitor,POST,/visitor/tickets,visitor visits ticket shop
+Ticket,POST,/visitor/1/tickets/buys,visitor buys a ticket
+Shop,GET,/zoo/visitor/1/tickets/1,validate visitor's ticket
+Enclosure,GET,/zoo/1/visitors/1/tasks,visitor chooses between tasks
+Animals,GET,/zoo/1/visitors/1/enclosures,visitor visits enclosure
+Animals,POST,/zoo/1/visitors/1/enclosures/1/feeds,visitor feeds animal from enclosure
+Hospital,GET,/zoo/1/visitors/1/hospital,visitor visits the hospital
+Hospital,GET,/zoo/1/visitors/1/hospital/lecture,visitor listens to a science lecture
+Shop,GET,/zoo/1/visitors/1/shops,visitor visits a shop
+Product,POST,/zoo/1/visitors/1/shops/1/products/1/buys,visitor makes a purchase
+Zoo,POST,/zoo/1/visitors/1/leave,visitor leaves the zoo
+Zoo,GET,/zoo,Get the current state of the Zoo
+Zoo,POST,/admin/zoo/open,Admin opens the zoo
+Zoo,POST,/admin/zoo/close,Admin closes the zoo
+Admin,POST,/admin/authenticate,Admin authenticates (logs in)
+Admin,GET,/admin/visitors,Admin retrieves all visitors
+Admin,GET,/admin/handlers,Admin retrieves all handlers
+Admin,GET,/admin/veterinarians,Admin retrieves all veterinarians
+People,GET,/zoo/people/{id},Get details of a specific person (general)
+Visitors,GET,/zoo/visitors,Get all visitors
+Visitors,GET,/zoo/visitors/{id},Get details of a specific visitor
+Handlers,GET,/zoo/handlers,Get all handlers
+Handlers,GET,/zoo/handlers/{id},Get details of a specific handler
+Handlers,POST,/zoo/handlers/{id}/feedAnimal,Handler feeds an animal
+Handlers,POST,/zoo/handlers/{id}/exerciseAnimal,Handler exercises an animal
+Handlers,POST,/zoo/handlers/{id}/examineAnimal,Handler examines an animal
+Veterinarians,GET,/zoo/veterinarians,Get all veterinarians
+Veterinarians,GET,/zoo/veterinarians/{id},Get details of a specific veterinarian
+Veterinarians,POST,/zoo/veterinarians/{id}/healAnimal,Veterinarian heals an animal
+Veterinarians,POST,/zoo/veterinarians/{id}/lecture,Veterinarian gives a lecture
+Shop,GET,/zoo/shops,Get all shops
+Shop,GET,/zoo/shops/{id},Get details of a specific shop
+Tickets (Shop),GET,/zoo/shops/{shopId}/tickets,Get tickets available in a shop
+Drinks (Shop),GET,/zoo/shops/{shopId}/drinks,Get drinks available in a shop
+Food (Shop),GET,/zoo/shops/{shopId}/food,Get food available in a shop
+Gifts (Shop),GET,/zoo/shops/{shopId}/gifts,Get gifts available in a shop
+Building,GET,/zoo/buildings,Get all buildings
+Building,GET,/zoo/buildings/{id},Get details of a specific building
+Hospital,GET,/zoo/buildings/hospital,Get details of the hospital building
+Enclosure,GET,/zoo/enclosures,Get all enclosures
+Enclosure,GET,/zoo/enclosures/{id},Get details of a specific enclosure
+PachydermEnclosure,GET,/zoo/enclosures/pachyderm,Get all pachyderm enclosures
+FelineEnclosure,GET,/zoo/enclosures/feline,Get all feline enclosures
+BirdEnclosure,GET,/zoo/enclosures/bird,Get all bird enclosures
+Animal,GET,/zoo/animals,Get all animals
+Animal,GET,/zoo/animals/{id},Get details of a specific animal
+Animal,PUT,/zoo/animals/{id}/health,Update an animal's health status
+Animal,GET,/zoo/animals/{id}/sound,Get the sound an animal makes
+Animal,POST,/zoo/animals/{id}/eat,Simulate an animal eating
+Animal,POST,/zoo/animals/{id}/roam,Simulate an animal roaming
+Pachyderm,GET,/zoo/animals/pachyderm,Get all pachyderm animals
+Pachyderm,GET,/zoo/animals/pachyderm/{id},Get details of a specific pachyderm
+Rhino,GET,/zoo/animals/rhino,Get all rhinos
+Rhino,GET,/zoo/animals/rhino/{id},Get details of a specific rhino
+Elephant,GET,/zoo/animals/elephant,Get all elephants
+Elephant,GET,/zoo/animals/elephant/{id},Get details of a specific elephant
+Hippo,GET,/zoo/animals/hippo,Get all hippos
+Hippo,GET,/zoo/animals/hippo/{id},Get details of a specific hippo
+Feline,GET,/zoo/animals/feline,Get all feline animals
+Feline,GET,/zoo/animals/feline/{id},Get details of a specific feline
+Tiger,GET,/zoo/animals/tiger,Get all tigers
+Tiger,GET,/zoo/animals/tiger/{id},Get details of a specific tiger
+Lion,GET,/zoo/animals/lion,Get all lions
+Lion,GET,/zoo/animals/lion/{id},Get details of a specific lion
+Cheetah,GET,/zoo/animals/cheetah,Get all cheetahs
+Cheetah,GET,/zoo/animals/cheetah/{id},Get details of a specific cheetah
+Bird,GET,/zoo/animals/bird,Get all bird animals
+Bird,GET,/zoo/animals/bird/{id},Get details of a specific bird
+Parrot,GET,/zoo/animals/parrot,Get all parrots
+Parrot,GET,/zoo/animals/parrot/{id},Get details of a specific parrot
+Falcon,GET,/zoo/animals/falcon,Get all falcons
+Falcon,GET,/zoo/animals/falcon/{id},Get details of a specific falcon
+Owl,GET,/zoo/animals/owl,Get all owls
+Owl,GET,/zoo/animals/owl/{id},Get details of a specific owl
